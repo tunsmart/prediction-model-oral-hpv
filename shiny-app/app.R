@@ -2,7 +2,7 @@ library(recipes)
 library(rms)
 library(shiny)
 
-# Define UI for application that draws a histogram
+# Define UI for the application 
 ui <- fluidPage(
 
         # Application title
@@ -75,7 +75,7 @@ ui <- fluidPage(
       )
 )
 
-# Define server logic required to draw a histogram
+# Define server logic
 server <- function(input, output) {
             model <- readRDS("penalized_model.RDS")
             prepare <- readRDS("prepare.RDS")
